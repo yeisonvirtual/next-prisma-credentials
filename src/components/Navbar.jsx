@@ -17,17 +17,17 @@ export const Navbar = async () => {
           !session && (
             <>
               <li>
-                <Link href={'/'}>
+                <Link href='/'>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href={'/auth/login'}>
+                <Link href='/auth/login'>
                   Login
                 </Link>
               </li>
               <li>
-                <Link href={'/auth/register'}>
+                <Link href='/auth/register'>
                   Register
                 </Link>
               </li>
@@ -38,12 +38,12 @@ export const Navbar = async () => {
           session && session.user && (
             <>
               <li>
-                <Link href={'/dashboard'}>
+                <Link href='/dashboard'>
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link href={'/api/auth/signout'}>
+                <Link href='/api/auth/signout'>
                   Logout
                 </Link>
               </li>
